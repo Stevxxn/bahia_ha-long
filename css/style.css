@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e90ff;
+    color: white;
+    background: linear-gradient(to right, #1e90ff, #00bfff);
+}
+/*Letras con fondo de imagen*/
+h1 {
+    font-size: 5rem; /* ¡Tamaño gigante! Ajusta según necesidad (ej: 4rem, 6rem) */
+    font-weight: bold; /* Texto en negrita */
+    letter-spacing: 2px; /* Espaciado entre letras para mejor legibilidad */
+    text-align: center; /* Centrado */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 20px 0; /* Espacio interno arriba/abajo */
+    
+    /* Efecto de imagen en el texto */
+    color: white;
+    background: url(https://www.exoticca.com/_next/image?url=https%3A%2F%2Fuploads.exoticca.com%2Fglobal%2Fdestination%2Fpoi%2Fbahia-de-halong.png&w=3840&q=75);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-position: center;
+    background-size: cover;
+    
+    /* Borde blanco para contraste */
+    -webkit-text-stroke: 1px white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra opcional para profundidad */
+}
+
+/* Contenedor principal centrado */
+.contenedor-centrado {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 20px;
+}
+
+/* Secciones centradas */
+.seccion-centrada {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 30px;
+}
+
+/* Contenedor para imágenes/videos */
+.contenedor-media {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin: 20px 0;
+}
+
+/* Imagen/iframe centrados y responsivos */
+.media-centrada {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Iframe específico (video) */
+iframe.media-centrada {
+    width: 560px;
+    height: 315px;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a { 
+  float: center; 
+  color: black; 
+  text-align: center; 
+  padding: 12px; 
+  text-decoration: none; 
+  font-size: 18px;  
+  line-height: 25px; 
+  border-radius: 4px; 
+}
+
+nav a:hover { 
+  background-color: #ddd; 
+  border:1px solid gray; 
+  color: black; 
+} 
+nav a.active { 
+  background-color: dodgerblue; 
+  border:1px solid rgb(0, 0, 0); 
+  color: rgb(64, 0, 128); 
+} 
+
+/* Tabla */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Formulario */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0066cc;
+}
